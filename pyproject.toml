@@ -1,0 +1,18 @@
+[project]
+name = "gearcheck"
+version = "0.1.0"
+description = "Gear check-in/check-out tracker"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.30.0",
+    "sqlmodel>=0.0.16",
+    "pydantic[email]>=2.6.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
